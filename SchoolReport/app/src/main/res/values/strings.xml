@@ -1,0 +1,23 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">School Report</string>
+    <string name="app_index_title">Student Report Card</string>
+
+    <string name="title">洲际大学导弹系二班各学期成绩单</string>
+
+    <string name="chinese">语文</string>
+    <string name="math">数学</string>
+    <string name="english">英语</string>
+    <string name="physics">物理</string>
+    <string name="chemistry">化学</string>
+    <string name="biology">生物</string>
+
+    <string name="subject">学科</string>
+    <string name="first_term">第一学期</string>
+    <string name="second_term">第二学期</string>
+    <string name="third_term">第三学期</string>
+
+    <string name="student_name">
+        姓名：
+        <xliff:g example="朱小猪" id="mStudentName">%1$s</xliff:g>
+    </string>
+</resources>

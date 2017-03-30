@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.example.android.schoolreport.ShowReportCardActivity">
+
+    <TextView
+        android:id="@+id/student_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:paddingLeft="14dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        tools:text="KKK"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/ListItemTitle"
+            android:text="@string/subject"/>
+
+        <TextView
+            style="@style/ListItemTitle"
+            android:text="@string/first_term"/>
+
+        <TextView
+            style="@style/ListItemTitle"
+            android:text="@string/second_term"/>
+
+        <TextView
+            style="@style/ListItemTitle"
+            android:text="@string/third_term"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/show_report_card_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
