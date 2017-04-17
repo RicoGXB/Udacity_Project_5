@@ -7,7 +7,7 @@
     <TextView
         android:id="@+id/list_item_subject"
         style="@style/ListItem"
-        android:text="余数" />
+        android:text="学科" />
 
     <TextView
         android:id="@+id/list_item_freshman_score"

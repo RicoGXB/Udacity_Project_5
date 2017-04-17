@@ -52,6 +52,11 @@ public class ReportCardAdapter extends ArrayAdapter<ReportCard> {
             freshmanScore.setTextColor( ContextCompat.getColor( this.getContext(), R.color.Red ) );
             sophomoreScore.setTextColor( ContextCompat.getColor( this.getContext(), R.color.Red ) );
             juniorScore.setTextColor( ContextCompat.getColor( this.getContext(), R.color.Red ) );
+        } else {
+            subject.setTextColor( ContextCompat.getColor( this.getContext(), R.color.Black ) );
+            freshmanScore.setTextColor( ContextCompat.getColor( this.getContext(), R.color.Black ) );
+            sophomoreScore.setTextColor( ContextCompat.getColor( this.getContext(), R.color.Black ) );
+            juniorScore.setTextColor( ContextCompat.getColor( this.getContext(), R.color.Black ) );
         }
 
         return listItemView;

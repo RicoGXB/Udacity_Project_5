@@ -12,12 +12,14 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
+    static StoreReportCard mStoreReportCard;//保存获取的学生成绩，启动应用即初始化
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.activity_main );
 
-        //保存学生名字
+        //保存学生名字，可以学生姓名为搜索条件查询学生成绩
         final ArrayList<String> names = new ArrayList<>();
         names.add( "门钰程" );
         names.add( "张帆" );
@@ -40,6 +42,10 @@ public class MainActivity extends AppCompatActivity {
         names.add( "赵海霞" );
         names.add( "丛鸣" );
 
+        //从保存成绩的StroeReportCard类中取出需要的学生成绩
+        mStoreReportCard = new StoreReportCard();
+
+
         //创建ArrayAdapter<String>,管理学生姓名的显示
         ArrayAdapter<String> nameAdapter = new ArrayAdapter<String>( this, android.R.layout.simple_list_item_1, names );
         ListView listView = (ListView) findViewById( R.id.main_list_view );
@@ -50,13 +56,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 //传入被点击的学生在ArrayList中的位置
-                ShowReportCardActivity.mPosition = position;
                 ShowReportCardActivity.mStudentName = names.get( position );
 
                 Intent intent = new Intent( MainActivity.this, ShowReportCardActivity.class );
                 startActivity( intent );
             }
         } );
-
     }
+
 }
