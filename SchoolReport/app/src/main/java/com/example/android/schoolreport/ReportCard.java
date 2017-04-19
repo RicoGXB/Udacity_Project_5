@@ -49,18 +49,29 @@ public class ReportCard {
     }
 
     public String getFreshmanScore() {
-        String freshmanScore = Integer.toString( mFreshmanScore );
-        return freshmanScore;
+        return Integer.toString( mFreshmanScore );
     }
 
     public String getSophomoreScore() {
-        String sophomoreScore = Integer.toString( mSophomoreScore );
-        return sophomoreScore;
+        return Integer.toString( mSophomoreScore );
     }
 
     public String getJuniorScore() {
-        String juniorScore = Integer.toString( mJuniorScore );
-        return juniorScore;
+        return Integer.toString( mJuniorScore );
     }
 
+    /**
+     * Returns the string representation of the {@link ReportCard} object.
+     * 将 ReportCard 类中的所有变量都输出为字符串。
+     */
+    @Override
+    public String toString() {
+        return "ReportCard{" +
+                "mName='" + mName + '\'' +
+                ", mSubject='" + mSubject + '\'' +
+                ", mFreshmanScore=" + mFreshmanScore +
+                ", mSophomoreScore=" + mSophomoreScore +
+                ", mJuniorScore=" + mJuniorScore +
+                '}';
+    }
 }

@@ -30,6 +30,7 @@ public class ModifyReportCardAdapter extends ArrayAdapter<ReportCard> {
         //修改成绩前，先删除总分
         for (int index = 0; index < reportCards.size(); index++) {
             if ((reportCards.get( index ).getSubject()).equals( "总分" )) {
+                //移除总分
                 reportCards.remove( index );
             }
         }
