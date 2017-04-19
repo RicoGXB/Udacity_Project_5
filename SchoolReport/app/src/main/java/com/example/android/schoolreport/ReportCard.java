@@ -20,18 +20,22 @@ public class ReportCard {
         mJuniorScore = juniorScore;
     }
 
+    //set方法，修改学生姓名
     public void setName(String name) {
         mName = name;
     }
 
+    //set方法，修改第一学期分数
     public void setFreshmanScore(int freshmanScore) {
         mFreshmanScore = freshmanScore;
     }
 
+    //set方法，修改第二续期分数
     public void setSophomoreScore(int sophomoreScore) {
         mSophomoreScore = sophomoreScore;
     }
 
+    //set方法，修改第三学期分数
     public void setJuniorScore(int juniorScore) {
         mJuniorScore = juniorScore;
     }
@@ -45,15 +49,18 @@ public class ReportCard {
     }
 
     public String getFreshmanScore() {
-        return String.valueOf( mFreshmanScore );
+        String freshmanScore = Integer.toString( mFreshmanScore );
+        return freshmanScore;
     }
 
     public String getSophomoreScore() {
-        return String.valueOf( mSophomoreScore );
+        String sophomoreScore = Integer.toString( mSophomoreScore );
+        return sophomoreScore;
     }
 
     public String getJuniorScore() {
-        return String.valueOf( mJuniorScore );
+        String juniorScore = Integer.toString( mJuniorScore );
+        return juniorScore;
     }
 
 }
